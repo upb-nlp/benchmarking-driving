@@ -1,4 +1,3 @@
-```markdown
 # Automated Failure Mode Clustering for Traffic Law Evaluation
 
 This utility acts as an automated LLM judge layer. It parses the incorrect reasoning streams generated during model evaluation passes (e.g., Llama, Gemma, Qwen) and categorizes their root causes into a structured failure taxonomy.
@@ -33,7 +32,7 @@ MODEL_CSVS = {
 ```
 
 
-3. **Run the pipeline:**
+3. **Run the pipeline:**   
 ```bash
 python failure_clustering.py
 
@@ -49,7 +48,3 @@ The clustering pipeline relies on open-ended generation combined with strict key
 
 1. **Update the `VALID_CATEGORIES` list** at the top of the file to include your new classification tokens (ensure they are lowercase string identifiers).
 2. **Expand the description block inside `prepare_prompt**` so the judge model receives clear, updated operational definitions matching your custom evaluation criteria.
-
-```
-
-```
